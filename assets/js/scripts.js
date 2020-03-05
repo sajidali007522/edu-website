@@ -6,8 +6,15 @@ $(document).ready( function (){
         $(currentModal).addClass('is-active');
         return false;
     });
+
+
     $(".modal .delete, .modal-background").click(function (){
         $(this).parents(".modal").removeClass('is-active');
+
+        // if iframe inside the modal
+        var currentModal = $(this).parents(".modal");
+        var currentVideo = currentModal.find(".modal-card-body iframe");
+        currentModal.find(".modal-card-body iframe").attr("src", currentVideo.attr("src"));
         return false;
     });
     $(document).keydown(function(e) {

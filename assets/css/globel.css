@@ -80,9 +80,23 @@ p {
 .has-underline{text-decoration: underline;}
 .is-link-general{ color: #0082E6 }
 .is-font-sm{ font-size: 12px; }
+
+.button{
+    display: inline-block;
+    height: auto;
+}
 .is-button-lg{
     padding: 12px;
     height: auto;
+}
+.is-button-long{
+    min-width: 260px;
+    text-align: center;
+    padding: 16px 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'robotomedium';
+    font-weight: 600;
 }
 .is-align-center-align{
     align-items: center;
