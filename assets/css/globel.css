@@ -39,7 +39,9 @@ strong{
 }
 /* Links
 ______________________*/
-
+*{
+    outline: none;
+}
 a {
   color: #2F479F;
 }
@@ -179,8 +181,6 @@ body .button.is-success{
 }
 /* Header
 ______________________*/
-#header{
-}
 #header .container{
     display: flex;
     flex-wrap: wrap;
@@ -430,6 +430,33 @@ ______________________*/
         padding: 10px 5px;
         height: auto;
         margin: 0 5px 5px;
+    }
+.slick-dots{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 0;
+    bottom: -22px;
+    width: 100%;
+}
+    .slick-dots li{
+        margin-right: 9px;
+    }
+    .slick-dots button{
+        width: 40px;
+        height: 4px;
+        background: #e7e7e7;
+        font-size: 0;
+        border: none;
+        padding: 0;
+        outline: none;
+        cursor: pointer;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+    }
+    .slick-dots .slick-active button{
+        background: #ffaa59;
     }
 
 /*  Footer 

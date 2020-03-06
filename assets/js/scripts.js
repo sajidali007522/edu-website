@@ -94,9 +94,15 @@ $(document).ready( function (){
     });
 
     // slider
-    $('.experience-slider').slick({
+    $('.joy-slider').slick({
         arrows: false,
         dots: true
+    });
+    //  navigation start from 992px
+    $(".js-radios a").click(function (){
+        $(".js-radios a").removeClass('active');
+        $(this).addClass('active');
+        return false;
     });
 
     // tabs
