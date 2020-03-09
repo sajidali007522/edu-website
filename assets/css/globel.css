@@ -100,6 +100,23 @@ p {
     font-family: 'robotomedium';
     font-weight: 600;
 }
+.is-button-normal{
+    min-width: 220px;
+    text-align: center;
+    padding: 16px 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'robotomedium';
+    font-weight: 600;
+}
+.is-theme-button{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'robotomedium';
+    font-weight: 600;
+    padding: 10px 30px;
+}
 .is-align-center-align{
     align-items: center;
 }
@@ -140,6 +157,12 @@ body .button.is-success{
     .button.is-info:hover{
         background-color: #AED1F3;
         color: #5978B7;
+    }
+.button.is-warning{
+    background-color: #FFA734;
+}
+    .button.is-warning:hover{
+        background-color: #F58F0A;
     }
 
 
@@ -215,14 +238,16 @@ ______________________*/
         position: relative;
         padding-right: 14px;
     }
-    .nav-links > ul > li.dropdown > a:before{
-        content: " ";
-        background: url(../images/dropdown-arrow.svg) no-repeat;
+    .nav-links > ul > li.dropdown > a:after{
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: "\f107";
+        /*background: url(../images/dropdown-arrow.svg) no-repeat;*/
         width: 9px;
         height: 6px;
         position: absolute;
         right: 0;
-        top: 6px;
+        top: 2px;
     }
     .nav-secondary{
         position: relative;
@@ -236,7 +261,7 @@ ______________________*/
             box-shadow: 0 0 15px rgba(0,0,0, 0.2);
         }
         .nav-links .dropdown-menu:before{
-            top: -7px;
+            top: -4px;
             right: 25px;
         }
         .nav-links > ul .dropdown-content{
