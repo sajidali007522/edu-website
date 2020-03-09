@@ -19,7 +19,8 @@
 		max-width: 840px;
 		margin: 0 auto;
 	}
-	.banner-content h2{
+	.banner-content h2,
+	.banner-content h1{
 		font-family: 'poppinsbold';
         font-weight: bold;
         font-size: 38px;
@@ -1352,7 +1353,8 @@
 	.testimonial-section{
 		padding: 0 10px 25px;
 	}
-	.banner-content h2{
+	.banner-content h2,
+	.banner-content h1{
 		font-size: 32px;
 	}
 	.banner-content h3{
@@ -1363,7 +1365,8 @@
 	}
 }
 @media (max-width: 991px) {
-	.banner-content h2{
+	.banner-content h2,
+	.banner-content h1{
 		font-size: 24px;
 	}
 	.banner-content h3{
