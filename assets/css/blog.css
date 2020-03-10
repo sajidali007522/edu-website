@@ -69,6 +69,9 @@
         text-transform: uppercase;
         font-family: 'robotomedium';
     }
+    .author-right-detail p:last-child a{
+        color: #3068B3;
+    }
 .main-aritlce-sidebar{
 }
     .main-aritlce-sidebar .main-artilce{
@@ -115,6 +118,9 @@
     .main-aritlce-sidebar .main-article-inner h2{
         font-size: 24px;
         margin: 0 0 20px;
+    }
+    .main-aritlce-sidebar a{
+        color: #fff;
     }
 .title-special{
     position: relative;
@@ -188,9 +194,13 @@
         color: #3068B3;
         margin: 0 0 5px;
     }
-    .newsletter-form{
+    .newsletter-form,
+    .newsletter-form form{
         display: flex;
         flex-wrap: wrap;
+    }
+    .newsletter-form > .emaillist{
+        width: 100%;
     }
     .newsletter-form .input{
         width: 65%;
@@ -198,9 +208,31 @@
         height: 50px;
         line-height: 50px;
     }
-    .newsletter-form .button{
+    .newsletter-form .es-field-wrap{
+        width: 65%;
+        margin: 0;
+    }
+    .newsletter-form .es_txt_email{
+        width: 100%;
+        border:1px solid transparent;
+        background-color: #fff;
+        border-color: #dbdbdb;
+        border-radius: 4px;
+        color: #363636;
+        padding: 0 15px;
+        height: 50px;
+        line-height: 50px;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+    }
+    .newsletter-form .button,
+    .newsletter-form .es_submit_button{
+        cursor: pointer;
         width: 35%;
+        border:none;
         background: #5978B7;
+        color: #fff;
         text-align: center;
         font-size: 14px;
         font-family: 'poppinssemibold';
@@ -209,7 +241,8 @@
         line-height: 50px;
         padding: 0;
     }
-    .newsletter-form .button:hover{
+    .newsletter-form .button:hover,
+    .newsletter-form .es_submit_button:hover{
         background: #5978B7;
         opacity: 0.8;
     }
@@ -259,6 +292,9 @@
         font-weight: normal;
         margin: 0 0 10px;
     }
+    .recommended-detail h4 a{
+        color: #404040;
+    }
     .recommended-detail p{
         font-size: 12px;
         color: #404040;
@@ -273,6 +309,7 @@
         margin: 0 0 15px;
     }
     .categories-section li a{
+        color: #2F479F;
         display: block;
         position: relative;
         text-decoration: underline;
