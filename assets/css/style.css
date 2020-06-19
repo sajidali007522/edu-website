@@ -417,6 +417,7 @@
 	.team-photo img{
 		display: block;
 		margin: 0 auto;
+		max-width: 60px;
 		-moz-border-radius: 50%;
 		-webkit-border-radius: 50%;
 		border-radius: 50%;
@@ -1287,6 +1288,14 @@
 	.inner-info-wrap p a{
 		color: #3068B3;
 		text-decoration: underline;
+	}
+.list-contain ul{
+	list-style: outside;
+	margin-left: 20px;
+}
+	.list-contain li{
+		line-height: 1.6;
+		padding: 0 0 10px;
 	}
 .faq-wrap{
 	padding: 45px 0 35px;
